@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="10dp"
+
+   >
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/myNote"
+            android:layout_marginBottom="-14dp"
+            android:text="02.07.1994"
+            android:textSize="10dp"
+            android:paddingLeft="4dp"
+            android:id="@+id/tvDatum"/>
+
+
+        <EditText
+            android:id="@+id/myNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:gravity="top"
+            android:paddingLeft="4dp"
+            android:paddingBottom="20dp"
+            android:text="Test"
+            android:layout_marginTop="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tvPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="37dp"
+            android:paddingTop="2dp"
+            android:text="Preview"
+            android:layout_alignParentBottom="true"
+            />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/baseline_expand_less_black_18dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/doneSaveButton"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignTop="@+id/saveButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:background="@drawable/baseline_done_black_18dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/deleteNote"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:text="x" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
